@@ -4,6 +4,7 @@ Microsoft Windows [Version 10.0.18363.1256]
 C:\Users\JIHYE>git --version
 git version 2.23.0.windows.1
 
+#깃 업데이트
 C:\Users\JIHYE>git update-git-for-windows
 Git for Windows 2.23.0.windows.1 (64bit)
 Update 2.30.0.windows.1 is available
@@ -53,10 +54,12 @@ C:\Users\JIHYE\Desktop\projects>mkdir python_basic
 
 C:\Users\JIHYE\Desktop\projects>cd python_basic
 
+#윈도우는 ls 대신 dir을 쓸 수 있다
 C:\Users\JIHYE\Desktop\projects\python_basic>ls -al
 'ls'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
 배치 파일이 아닙니다.
 
+#깃 초기화 git init
 C:\Users\JIHYE\Desktop\projects\python_basic>git init
 Initialized empty Git repository in C:/Users/JIHYE/Desktop/projects/python_basic/.git/
 
@@ -82,6 +85,7 @@ C:\Users\JIHYE\Desktop\projects\python_basic>dir -al
 C:\Users\JIHYE\Desktop\projects\python_basic>open .git
 'open'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
 배치 파일이 아닙니다.
+#윈도우는 open 대신 start나 explorer를 쓸 수 있다
 
 C:\Users\JIHYE\Desktop\projects\python_basic>start .git
 
@@ -108,6 +112,7 @@ C:\Users\JIHYE\Desktop\projects\python_basic>dir
                1개 파일                  15 바이트
                2개 디렉터리  78,591,987,712 바이트 남음
 
+#깃 현재상태 확인 git status
 C:\Users\JIHYE\Desktop\projects\python_basic>git status
 On branch master
 
@@ -175,6 +180,7 @@ Changes to be committed:
         new file:   a.txt
 
 
+#무시할 파일 형식은 .gitignore에 저장
 C:\Users\JIHYE\Desktop\projects\python_basic>git */.ipynb_checkpoints/* > .gitignore
 git: '*/.ipynb_checkpoints/*' is not a git command. See 'git --help'.
 
@@ -272,6 +278,7 @@ C:\Users\JIHYE\Desktop\projects\python_basic>git status -s
 
 C:\Users\JIHYE\Desktop\projects\python_basic>git remote
 
+#깃과 깃허브 연동 git remote
 C:\Users\JIHYE\Desktop\projects\python_basic>git remote add origin https://github.com/jihye0115/python_basic.git
 
 C:\Users\JIHYE\Desktop\projects\python_basic>git branch -M main
@@ -332,6 +339,7 @@ To https://github.com/jihye0115/python_basic.git
    aa92565..0f736b5  main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 
+#깃허브로 변동사항 push
 C:\Users\JIHYE\Desktop\projects\python_basic>git push
 Everything up-to-date
 
